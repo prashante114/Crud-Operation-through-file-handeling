@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <title></title>
+   </head>
+     <body>
+        <div>
+         <table border="2" align="center">
+          {% for i in input_file %}
+             <tr>
+                <td>{{i.username}}</td>
+                 <td><a href="/file_delete/{{i.username}}">delete</a></td>
+              </tr>
+          {% endfor %}
+ 
+
+          </table>
+        </div>
+     </body>
+ </html>
